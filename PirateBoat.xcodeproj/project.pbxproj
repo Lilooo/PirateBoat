@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F22DF03C15790115008E41EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22DF03B15790115008E41EC /* UIKit.framework */; };
+		F22DF03E15790115008E41EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22DF03D15790115008E41EC /* Foundation.framework */; };
+		F22DF04015790115008E41EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22DF03F15790115008E41EC /* CoreGraphics.framework */; };
+		F22DF04215790115008E41EC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22DF04115790115008E41EC /* CoreData.framework */; };
+		F22DF04815790115008E41EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F22DF04615790115008E41EC /* InfoPlist.strings */; };
+		F22DF04A15790115008E41EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F22DF04915790115008E41EC /* main.m */; };
+		F22DF04E15790115008E41EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F22DF04D15790115008E41EC /* AppDelegate.m */; };
+		F22DF05115790115008E41EC /* PirateBoat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F22DF04F15790115008E41EC /* PirateBoat.xcdatamodeld */; };
+		F22DF05915790115008E41EC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22DF05815790115008E41EC /* SenTestingKit.framework */; };
+		F22DF05A15790115008E41EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22DF03B15790115008E41EC /* UIKit.framework */; };
+		F22DF05B15790115008E41EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22DF03D15790115008E41EC /* Foundation.framework */; };
+		F22DF05C15790115008E41EC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22DF04115790115008E41EC /* CoreData.framework */; };
+		F22DF06415790115008E41EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F22DF06215790115008E41EC /* InfoPlist.strings */; };
+		F22DF06715790115008E41EC /* PirateBoatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F22DF06615790115008E41EC /* PirateBoatTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F22DF05D15790115008E41EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F22DF02E15790114008E41EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F22DF03615790115008E41EC;
+			remoteInfo = PirateBoat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F22DF03715790115008E41EC /* PirateBoat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PirateBoat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F22DF03B15790115008E41EC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F22DF03D15790115008E41EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F22DF03F15790115008E41EC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F22DF04115790115008E41EC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F22DF04515790115008E41EC /* PirateBoat-Info.plist */ = {isa = PBXFileReference; path = "PirateBoat-Info.plist"; sourceTree = "<group>"; };
+		F22DF04715790115008E41EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F22DF04915790115008E41EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F22DF04B15790115008E41EC /* PirateBoat-Prefix.pch */ = {isa = PBXFileReference; path = "PirateBoat-Prefix.pch"; sourceTree = "<group>"; };
+		F22DF04C15790115008E41EC /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		F22DF04D15790115008E41EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F22DF05015790115008E41EC /* PirateBoat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PirateBoat.xcdatamodel; sourceTree = "<group>"; };
+		F22DF05715790115008E41EC /* PirateBoatTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PirateBoatTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F22DF05815790115008E41EC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		F22DF06115790115008E41EC /* PirateBoatTests-Info.plist */ = {isa = PBXFileReference; path = "PirateBoatTests-Info.plist"; sourceTree = "<group>"; };
+		F22DF06315790115008E41EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F22DF06515790115008E41EC /* PirateBoatTests.h */ = {isa = PBXFileReference; path = PirateBoatTests.h; sourceTree = "<group>"; };
+		F22DF06615790115008E41EC /* PirateBoatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PirateBoatTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F22DF03415790115008E41EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F22DF03C15790115008E41EC /* UIKit.framework in Frameworks */,
+				F22DF03E15790115008E41EC /* Foundation.framework in Frameworks */,
+				F22DF04015790115008E41EC /* CoreGraphics.framework in Frameworks */,
+				F22DF04215790115008E41EC /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F22DF05315790115008E41EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F22DF05915790115008E41EC /* SenTestingKit.framework in Frameworks */,
+				F22DF05A15790115008E41EC /* UIKit.framework in Frameworks */,
+				F22DF05B15790115008E41EC /* Foundation.framework in Frameworks */,
+				F22DF05C15790115008E41EC /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F22DF02C15790114008E41EC = {
+			isa = PBXGroup;
+			children = (
+				F22DF04315790115008E41EC /* PirateBoat */,
+				F22DF05F15790115008E41EC /* PirateBoatTests */,
+				F22DF03A15790115008E41EC /* Frameworks */,
+				F22DF03815790115008E41EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F22DF03815790115008E41EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F22DF03715790115008E41EC /* PirateBoat.app */,
+				F22DF05715790115008E41EC /* PirateBoatTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F22DF03A15790115008E41EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F22DF03B15790115008E41EC /* UIKit.framework */,
+				F22DF03D15790115008E41EC /* Foundation.framework */,
+				F22DF03F15790115008E41EC /* CoreGraphics.framework */,
+				F22DF04115790115008E41EC /* CoreData.framework */,
+				F22DF05815790115008E41EC /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F22DF04315790115008E41EC /* PirateBoat */ = {
+			isa = PBXGroup;
+			children = (
+				F22DF04C15790115008E41EC /* AppDelegate.h */,
+				F22DF04D15790115008E41EC /* AppDelegate.m */,
+				F22DF04F15790115008E41EC /* PirateBoat.xcdatamodeld */,
+				F22DF04415790115008E41EC /* Supporting Files */,
+			);
+			path = PirateBoat;
+			sourceTree = "<group>";
+		};
+		F22DF04415790115008E41EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F22DF04515790115008E41EC /* PirateBoat-Info.plist */,
+				F22DF04615790115008E41EC /* InfoPlist.strings */,
+				F22DF04915790115008E41EC /* main.m */,
+				F22DF04B15790115008E41EC /* PirateBoat-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F22DF05F15790115008E41EC /* PirateBoatTests */ = {
+			isa = PBXGroup;
+			children = (
+				F22DF06515790115008E41EC /* PirateBoatTests.h */,
+				F22DF06615790115008E41EC /* PirateBoatTests.m */,
+				F22DF06015790115008E41EC /* Supporting Files */,
+			);
+			path = PirateBoatTests;
+			sourceTree = "<group>";
+		};
+		F22DF06015790115008E41EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F22DF06115790115008E41EC /* PirateBoatTests-Info.plist */,
+				F22DF06215790115008E41EC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F22DF03615790115008E41EC /* PirateBoat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F22DF06A15790115008E41EC /* Build configuration list for PBXNativeTarget "PirateBoat" */;
+			buildPhases = (
+				F22DF03315790115008E41EC /* Sources */,
+				F22DF03415790115008E41EC /* Frameworks */,
+				F22DF03515790115008E41EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PirateBoat;
+			productName = PirateBoat;
+			productReference = F22DF03715790115008E41EC /* PirateBoat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F22DF05615790115008E41EC /* PirateBoatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F22DF06D15790115008E41EC /* Build configuration list for PBXNativeTarget "PirateBoatTests" */;
+			buildPhases = (
+				F22DF05215790115008E41EC /* Sources */,
+				F22DF05315790115008E41EC /* Frameworks */,
+				F22DF05415790115008E41EC /* Resources */,
+				F22DF05515790115008E41EC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F22DF05E15790115008E41EC /* PBXTargetDependency */,
+			);
+			name = PirateBoatTests;
+			productName = PirateBoatTests;
+			productReference = F22DF05715790115008E41EC /* PirateBoatTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F22DF02E15790114008E41EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = Dev0rAlive;
+			};
+			buildConfigurationList = F22DF03115790114008E41EC /* Build configuration list for PBXProject "PirateBoat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F22DF02C15790114008E41EC;
+			productRefGroup = F22DF03815790115008E41EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F22DF03615790115008E41EC /* PirateBoat */,
+				F22DF05615790115008E41EC /* PirateBoatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F22DF03515790115008E41EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F22DF04815790115008E41EC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F22DF05415790115008E41EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F22DF06415790115008E41EC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F22DF05515790115008E41EC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F22DF03315790115008E41EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F22DF04A15790115008E41EC /* main.m in Sources */,
+				F22DF04E15790115008E41EC /* AppDelegate.m in Sources */,
+				F22DF05115790115008E41EC /* PirateBoat.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F22DF05215790115008E41EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F22DF06715790115008E41EC /* PirateBoatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F22DF05E15790115008E41EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F22DF03615790115008E41EC /* PirateBoat */;
+			targetProxy = F22DF05D15790115008E41EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F22DF04615790115008E41EC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F22DF04715790115008E41EC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F22DF06215790115008E41EC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F22DF06315790115008E41EC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F22DF06815790115008E41EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F22DF06915790115008E41EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F22DF06B15790115008E41EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PirateBoat/PirateBoat-Prefix.pch";
+				INFOPLIST_FILE = "PirateBoat/PirateBoat-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F22DF06C15790115008E41EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PirateBoat/PirateBoat-Prefix.pch";
+				INFOPLIST_FILE = "PirateBoat/PirateBoat-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F22DF06E15790115008E41EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PirateBoat.app/PirateBoat";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PirateBoat/PirateBoat-Prefix.pch";
+				INFOPLIST_FILE = "PirateBoatTests/PirateBoatTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		F22DF06F15790115008E41EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PirateBoat.app/PirateBoat";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PirateBoat/PirateBoat-Prefix.pch";
+				INFOPLIST_FILE = "PirateBoatTests/PirateBoatTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F22DF03115790114008E41EC /* Build configuration list for PBXProject "PirateBoat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F22DF06815790115008E41EC /* Debug */,
+				F22DF06915790115008E41EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F22DF06A15790115008E41EC /* Build configuration list for PBXNativeTarget "PirateBoat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F22DF06B15790115008E41EC /* Debug */,
+				F22DF06C15790115008E41EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F22DF06D15790115008E41EC /* Build configuration list for PBXNativeTarget "PirateBoatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F22DF06E15790115008E41EC /* Debug */,
+				F22DF06F15790115008E41EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F22DF04F15790115008E41EC /* PirateBoat.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F22DF05015790115008E41EC /* PirateBoat.xcdatamodel */,
+			);
+			currentVersion = F22DF05015790115008E41EC /* PirateBoat.xcdatamodel */;
+			path = PirateBoat.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F22DF02E15790114008E41EC /* Project object */;
+}
