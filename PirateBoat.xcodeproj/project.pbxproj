@@ -21,6 +21,8 @@
 		F22DF05C15790115008E41EC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22DF04115790115008E41EC /* CoreData.framework */; };
 		F22DF06415790115008E41EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F22DF06215790115008E41EC /* InfoPlist.strings */; };
 		F22DF06715790115008E41EC /* PirateBoatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F22DF06615790115008E41EC /* PirateBoatTests.m */; };
+		F22DF07A15793767008E41EC /* Caterory.m in Sources */ = {isa = PBXBuildFile; fileRef = F22DF07915793767008E41EC /* Caterory.m */; };
+		F22DF07D15793768008E41EC /* Torrent.m in Sources */ = {isa = PBXBuildFile; fileRef = F22DF07C15793768008E41EC /* Torrent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,19 +41,23 @@
 		F22DF03D15790115008E41EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F22DF03F15790115008E41EC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		F22DF04115790115008E41EC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		F22DF04515790115008E41EC /* PirateBoat-Info.plist */ = {isa = PBXFileReference; path = "PirateBoat-Info.plist"; sourceTree = "<group>"; };
+		F22DF04515790115008E41EC /* PirateBoat-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PirateBoat-Info.plist"; sourceTree = "<group>"; };
 		F22DF04715790115008E41EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F22DF04915790115008E41EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F22DF04B15790115008E41EC /* PirateBoat-Prefix.pch */ = {isa = PBXFileReference; path = "PirateBoat-Prefix.pch"; sourceTree = "<group>"; };
-		F22DF04C15790115008E41EC /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		F22DF04B15790115008E41EC /* PirateBoat-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PirateBoat-Prefix.pch"; sourceTree = "<group>"; };
+		F22DF04C15790115008E41EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F22DF04D15790115008E41EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F22DF05015790115008E41EC /* PirateBoat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PirateBoat.xcdatamodel; sourceTree = "<group>"; };
 		F22DF05715790115008E41EC /* PirateBoatTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PirateBoatTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F22DF05815790115008E41EC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		F22DF06115790115008E41EC /* PirateBoatTests-Info.plist */ = {isa = PBXFileReference; path = "PirateBoatTests-Info.plist"; sourceTree = "<group>"; };
+		F22DF06115790115008E41EC /* PirateBoatTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PirateBoatTests-Info.plist"; sourceTree = "<group>"; };
 		F22DF06315790115008E41EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F22DF06515790115008E41EC /* PirateBoatTests.h */ = {isa = PBXFileReference; path = PirateBoatTests.h; sourceTree = "<group>"; };
+		F22DF06515790115008E41EC /* PirateBoatTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PirateBoatTests.h; sourceTree = "<group>"; };
 		F22DF06615790115008E41EC /* PirateBoatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PirateBoatTests.m; sourceTree = "<group>"; };
+		F22DF07815793767008E41EC /* Caterory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Caterory.h; sourceTree = "<group>"; };
+		F22DF07915793767008E41EC /* Caterory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Caterory.m; sourceTree = "<group>"; };
+		F22DF07B15793768008E41EC /* Torrent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Torrent.h; sourceTree = "<group>"; };
+		F22DF07C15793768008E41EC /* Torrent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Torrent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,9 @@
 		F22DF02C15790114008E41EC = {
 			isa = PBXGroup;
 			children = (
+				F22DF07E157937AE008E41EC /* models */,
+				F22DF07815793767008E41EC /* Caterory.h */,
+				F22DF07915793767008E41EC /* Caterory.m */,
 				F22DF04315790115008E41EC /* PirateBoat */,
 				F22DF05F15790115008E41EC /* PirateBoatTests */,
 				F22DF03A15790115008E41EC /* Frameworks */,
@@ -150,6 +159,15 @@
 				F22DF06215790115008E41EC /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F22DF07E157937AE008E41EC /* models */ = {
+			isa = PBXGroup;
+			children = (
+				F22DF07B15793768008E41EC /* Torrent.h */,
+				F22DF07C15793768008E41EC /* Torrent.m */,
+			);
+			name = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +279,8 @@
 				F22DF04A15790115008E41EC /* main.m in Sources */,
 				F22DF04E15790115008E41EC /* AppDelegate.m in Sources */,
 				F22DF05115790115008E41EC /* PirateBoat.xcdatamodeld in Sources */,
+				F22DF07A15793767008E41EC /* Caterory.m in Sources */,
+				F22DF07D15793768008E41EC /* Torrent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
