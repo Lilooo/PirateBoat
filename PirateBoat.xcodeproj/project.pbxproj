@@ -23,6 +23,8 @@
 		F22DF06715790115008E41EC /* PirateBoatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F22DF06615790115008E41EC /* PirateBoatTests.m */; };
 		F22DF07A15793767008E41EC /* Caterory.m in Sources */ = {isa = PBXBuildFile; fileRef = F22DF07915793767008E41EC /* Caterory.m */; };
 		F22DF07D15793768008E41EC /* Torrent.m in Sources */ = {isa = PBXBuildFile; fileRef = F22DF07C15793768008E41EC /* Torrent.m */; };
+		F2578EF21584CB8600E2643B /* IndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2578EF01584CB8600E2643B /* IndexViewController.m */; };
+		F2578EF31584CB8600E2643B /* IndexViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2578EF11584CB8600E2643B /* IndexViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,9 @@
 		F22DF07915793767008E41EC /* Caterory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Caterory.m; sourceTree = "<group>"; };
 		F22DF07B15793768008E41EC /* Torrent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Torrent.h; sourceTree = "<group>"; };
 		F22DF07C15793768008E41EC /* Torrent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Torrent.m; sourceTree = "<group>"; };
+		F2578EEF1584CB8600E2643B /* IndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexViewController.h; sourceTree = "<group>"; };
+		F2578EF01584CB8600E2643B /* IndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexViewController.m; sourceTree = "<group>"; };
+		F2578EF11584CB8600E2643B /* IndexViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IndexViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,9 +94,6 @@
 		F22DF02C15790114008E41EC = {
 			isa = PBXGroup;
 			children = (
-				F22DF07E157937AE008E41EC /* models */,
-				F22DF07815793767008E41EC /* Caterory.h */,
-				F22DF07915793767008E41EC /* Caterory.m */,
 				F22DF04315790115008E41EC /* PirateBoat */,
 				F22DF05F15790115008E41EC /* PirateBoatTests */,
 				F22DF03A15790115008E41EC /* Frameworks */,
@@ -123,6 +125,9 @@
 		F22DF04315790115008E41EC /* PirateBoat */ = {
 			isa = PBXGroup;
 			children = (
+				F2578EED1584CB2500E2643B /* controller */,
+				F2578EEC1584CAFD00E2643B /* view */,
+				F22DF07E157937AE008E41EC /* models */,
 				F22DF04C15790115008E41EC /* AppDelegate.h */,
 				F22DF04D15790115008E41EC /* AppDelegate.m */,
 				F22DF04F15790115008E41EC /* PirateBoat.xcdatamodeld */,
@@ -164,10 +169,38 @@
 		F22DF07E157937AE008E41EC /* models */ = {
 			isa = PBXGroup;
 			children = (
+				F2578EEE1584CB4000E2643B /* data */,
+			);
+			name = models;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		F2578EEC1584CAFD00E2643B /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F2578EF11584CB8600E2643B /* IndexViewController.xib */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		F2578EED1584CB2500E2643B /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				F2578EEF1584CB8600E2643B /* IndexViewController.h */,
+				F2578EF01584CB8600E2643B /* IndexViewController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		F2578EEE1584CB4000E2643B /* data */ = {
+			isa = PBXGroup;
+			children = (
+				F22DF07815793767008E41EC /* Caterory.h */,
+				F22DF07915793767008E41EC /* Caterory.m */,
 				F22DF07B15793768008E41EC /* Torrent.h */,
 				F22DF07C15793768008E41EC /* Torrent.m */,
 			);
-			name = models;
+			name = data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F22DF04815790115008E41EC /* InfoPlist.strings in Resources */,
+				F2578EF31584CB8600E2643B /* IndexViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +315,7 @@
 				F22DF05115790115008E41EC /* PirateBoat.xcdatamodeld in Sources */,
 				F22DF07A15793767008E41EC /* Caterory.m in Sources */,
 				F22DF07D15793768008E41EC /* Torrent.m in Sources */,
+				F2578EF21584CB8600E2643B /* IndexViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +479,7 @@
 				F22DF06C15790115008E41EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F22DF06D15790115008E41EC /* Build configuration list for PBXNativeTarget "PirateBoatTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +488,7 @@
 				F22DF06F15790115008E41EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
