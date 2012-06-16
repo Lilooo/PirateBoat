@@ -13,6 +13,10 @@
 @end
 
 @implementation DetailTorrentViewController
+@synthesize pubDate;
+@synthesize creator;
+@synthesize title;
+@synthesize contentLength;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,6 +35,10 @@
 
 - (void)viewDidUnload
 {
+    [self setPubDate:nil];
+    [self setCreator:nil];
+    [self setTitle:nil];
+    [self setContentLength:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
