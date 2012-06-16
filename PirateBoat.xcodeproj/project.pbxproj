@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0066E1AB158CF2C200ED7BED /* DetailTorrentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0066E1A9158CF2C200ED7BED /* DetailTorrentViewController.m */; };
+		0066E1AC158CF2C200ED7BED /* DetailTorrentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0066E1AA158CF2C200ED7BED /* DetailTorrentViewController.xib */; };
 		F22DF03C15790115008E41EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22DF03B15790115008E41EC /* UIKit.framework */; };
 		F22DF03E15790115008E41EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22DF03D15790115008E41EC /* Foundation.framework */; };
 		F22DF04015790115008E41EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22DF03F15790115008E41EC /* CoreGraphics.framework */; };
@@ -38,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0066E1A8158CF2C200ED7BED /* DetailTorrentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTorrentViewController.h; sourceTree = "<group>"; };
+		0066E1A9158CF2C200ED7BED /* DetailTorrentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTorrentViewController.m; sourceTree = "<group>"; };
+		0066E1AA158CF2C200ED7BED /* DetailTorrentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailTorrentViewController.xib; sourceTree = "<group>"; };
 		F22DF03715790115008E41EC /* PirateBoat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PirateBoat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F22DF03B15790115008E41EC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F22DF03D15790115008E41EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -179,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				F2578EF11584CB8600E2643B /* IndexViewController.xib */,
+				0066E1AA158CF2C200ED7BED /* DetailTorrentViewController.xib */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -186,6 +192,8 @@
 		F2578EED1584CB2500E2643B /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				0066E1A8158CF2C200ED7BED /* DetailTorrentViewController.h */,
+				0066E1A9158CF2C200ED7BED /* DetailTorrentViewController.m */,
 				F2578EEF1584CB8600E2643B /* IndexViewController.h */,
 				F2578EF01584CB8600E2643B /* IndexViewController.m */,
 			);
@@ -276,6 +284,7 @@
 			files = (
 				F22DF04815790115008E41EC /* InfoPlist.strings in Resources */,
 				F2578EF31584CB8600E2643B /* IndexViewController.xib in Resources */,
+				0066E1AC158CF2C200ED7BED /* DetailTorrentViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +325,7 @@
 				F22DF07A15793767008E41EC /* Caterory.m in Sources */,
 				F22DF07D15793768008E41EC /* Torrent.m in Sources */,
 				F2578EF21584CB8600E2643B /* IndexViewController.m in Sources */,
+				0066E1AB158CF2C200ED7BED /* DetailTorrentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
