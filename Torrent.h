@@ -23,4 +23,6 @@
 @property (nonatomic, retain) NSString * magnet;
 @property (nonatomic, retain) Caterory *releatedCategory;
 
++ (Torrent *) torrentModel;
+
 @end

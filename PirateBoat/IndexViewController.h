@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Torrent.h"
 
 @interface IndexViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *title;
+@property (weak, nonatomic) IBOutlet UILabel *pubDate;
+@property (weak, nonatomic) IBOutlet UILabel *creator;
+@property (weak, nonatomic) IBOutlet UIButton *guid;
+@property (weak, nonatomic) IBOutlet UILabel *contentLength;
+@property (weak, nonatomic) IBOutlet UIButton *link;
+@property (strong, nonatomic) Torrent * torrent;
 
 @end

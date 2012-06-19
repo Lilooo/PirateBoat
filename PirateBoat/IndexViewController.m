@@ -13,6 +13,12 @@
 @end
 
 @implementation IndexViewController
+@synthesize title;
+@synthesize pubDate;
+@synthesize creator;
+@synthesize guid;
+@synthesize contentLength;
+@synthesize link;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -23,14 +29,35 @@
     return self;
 }
 
+- (void)update 
+{
+    self.title.text = self.torrent.name;
+    self.pubDate.text = self.torrent.startDate;
+    self.creator.text = self.torrent.dcCreator;
+    self.contentLength.text = self.torrent.magnet;
+    //self.guid.?? = self.torrent.comments;
+    //self.link.?? = self.torrent.url;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    if (!self.torrent) 
+    {
+        self.torrent = [Torrent torrentModel];
+    }
+    [self update];
 }
 
 - (void)viewDidUnload
 {
+    [self setTitle:nil];
+    [self setPubDate:nil];
+    [self setCreator:nil];
+    [self setGuid:nil];
+    [self setContentLength:nil];
+    [self setLink:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
