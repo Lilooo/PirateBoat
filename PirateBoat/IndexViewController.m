@@ -7,18 +7,21 @@
 //
 
 #import "IndexViewController.h"
+#import "ListViewController.h"
+#import "Torrent.h"
 
 @interface IndexViewController ()
 
 @end
 
 @implementation IndexViewController
-@synthesize title;
+@synthesize name;
 @synthesize pubDate;
 @synthesize creator;
 @synthesize guid;
 @synthesize contentLength;
 @synthesize link;
+@synthesize torrent;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,8 +34,8 @@
 
 - (void)update 
 {
-    self.title.text = self.torrent.name;
-    self.pubDate.text = self.torrent.startDate;
+    self.name.text = self.torrent.name;
+    self.pubDate.text = [NSDateFormatter localizedStringFromDate:self.torrent.startDate dateStyle:NSDateFormatterLongStyle timeStyle:NSDateFormatterNoStyle];
     self.creator.text = self.torrent.dcCreator;
     self.contentLength.text = self.torrent.magnet;
     //self.guid.?? = self.torrent.comments;
@@ -52,7 +55,7 @@
 
 - (void)viewDidUnload
 {
-    [self setTitle:nil];
+    [self setName:nil];
     [self setPubDate:nil];
     [self setCreator:nil];
     [self setGuid:nil];

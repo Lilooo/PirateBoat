@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "IndexViewController.h"
+#import "ListViewController.h"
+#import "Torrent.h"
 
 @implementation AppDelegate
 
@@ -14,12 +17,23 @@
 @synthesize managedObjectContext = __managedObjectContext;
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
+@synthesize rootViewController;
+
+- (UIViewController *) rootViewController
+{
+    ListViewController * vc = [[ListViewController alloc]init];
+    UINavigationController * nav = [[UINavigationController alloc]initWithRootViewController:vc];
+    nav.navigationBar.tintColor = [UIColor blackColor];
+    return nav;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = self.rootViewController;
+    NSLog(@"toto");
     [self.window makeKeyAndVisible];
     return YES;
 }

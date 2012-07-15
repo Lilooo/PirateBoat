@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		007E03F7159DC0E40072BCD8 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007E03F5159DC0E30072BCD8 /* AboutViewController.m */; };
+		007E03F8159DC0E40072BCD8 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 007E03F6159DC0E30072BCD8 /* AboutViewController.xib */; };
 		00EDA13E1590FE9C0079FF80 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EDA13C1590FE9C0079FF80 /* ListViewController.m */; };
 		00EDA13F1590FE9C0079FF80 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00EDA13D1590FE9C0079FF80 /* ListViewController.xib */; };
 		F22DF03C15790115008E41EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22DF03B15790115008E41EC /* UIKit.framework */; };
@@ -40,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		007E03F4159DC0E30072BCD8 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		007E03F5159DC0E30072BCD8 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		007E03F6159DC0E30072BCD8 /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
 		00EDA13B1590FE9C0079FF80 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
 		00EDA13C1590FE9C0079FF80 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		00EDA13D1590FE9C0079FF80 /* ListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
@@ -183,6 +188,7 @@
 		F2578EEC1584CAFD00E2643B /* view */ = {
 			isa = PBXGroup;
 			children = (
+				007E03F6159DC0E30072BCD8 /* AboutViewController.xib */,
 				F2578EF11584CB8600E2643B /* IndexViewController.xib */,
 				00EDA13D1590FE9C0079FF80 /* ListViewController.xib */,
 			);
@@ -194,6 +200,8 @@
 			children = (
 				00EDA13B1590FE9C0079FF80 /* ListViewController.h */,
 				00EDA13C1590FE9C0079FF80 /* ListViewController.m */,
+				007E03F4159DC0E30072BCD8 /* AboutViewController.h */,
+				007E03F5159DC0E30072BCD8 /* AboutViewController.m */,
 				F2578EEF1584CB8600E2643B /* IndexViewController.h */,
 				F2578EF01584CB8600E2643B /* IndexViewController.m */,
 			);
@@ -285,6 +293,7 @@
 				F22DF04815790115008E41EC /* InfoPlist.strings in Resources */,
 				F2578EF31584CB8600E2643B /* IndexViewController.xib in Resources */,
 				00EDA13F1590FE9C0079FF80 /* ListViewController.xib in Resources */,
+				007E03F8159DC0E40072BCD8 /* AboutViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +335,7 @@
 				F22DF07D15793768008E41EC /* Torrent.m in Sources */,
 				F2578EF21584CB8600E2643B /* IndexViewController.m in Sources */,
 				00EDA13E1590FE9C0079FF80 /* ListViewController.m in Sources */,
+				007E03F7159DC0E40072BCD8 /* AboutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

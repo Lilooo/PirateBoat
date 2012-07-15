@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Torrent.h"
+#import "IndexViewController.h"
 
 @interface ListViewController : UITableViewController
 
