@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "IndexViewController.h"
 #import "ListViewController.h"
+#import "AboutViewController.h"
 #import "Torrent.h"
 
 @implementation AppDelegate
@@ -21,7 +22,9 @@
 
 - (UIViewController *) rootViewController
 {
-    ListViewController * vc = [[ListViewController alloc]init];
+    //AboutViewController * vc = [[AboutViewController alloc]init];
+    IndexViewController * vc = [[IndexViewController alloc]init];
+    //ListViewController * vc = [[ListViewController alloc]init];
     UINavigationController * nav = [[UINavigationController alloc]initWithRootViewController:vc];
     nav.navigationBar.tintColor = [UIColor blackColor];
     return nav;

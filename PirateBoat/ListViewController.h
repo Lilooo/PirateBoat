@@ -12,4 +12,6 @@
 
 @interface ListViewController : UITableViewController
 
+@property (strong,nonatomic) NSArray * dataSource;
+
 @end

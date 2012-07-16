@@ -13,6 +13,10 @@
 @end
 
 @implementation ListViewController
+@synthesize dataSource;
+
+
+
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -26,7 +30,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //Torrent *torrents = [[Torrent alloc]init];
+    //self.dataSource = [Torrent torrentModel];
+    //self.navigationItem.titleView = self.seg;
+    
+    ///*Torrent *torrents = */[[Torrent alloc]init];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -64,12 +71,15 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    //static NSString *CellIdentifier = @"Cell";
+    //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     // Configure the cell...
+    //Torrent * model = [[Torrent alloc]init];
+    //cell.textLabel.text = model.name;
+    //cell.textLabel.text = model.dcCreator;
     
-    return cell;
+    //return cell;
 }
 
 /*
@@ -116,12 +126,12 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
+    
+     //IndexViewController *detailViewController = [[IndexViewController alloc] initWithNibName:@"toto" bundle:nil];
      // ...
      // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+     //[self.navigationController pushViewController:detailViewController animated:YES];
+    
 }
 
 @end

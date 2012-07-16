@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
+#import <Twitter/Twitter.h>
+
 
 @interface AboutViewController : UIViewController
+
+<UIActionSheetDelegate, MFMailComposeViewControllerDelegate>
+
+- (IBAction)share:(id)sender;
 
 @end

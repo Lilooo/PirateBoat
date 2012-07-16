@@ -8,6 +8,7 @@
 
 #import "IndexViewController.h"
 #import "ListViewController.h"
+#import "AboutViewController.h"
 #import "Torrent.h"
 
 @interface IndexViewController ()
@@ -22,6 +23,7 @@
 @synthesize contentLength;
 @synthesize link;
 @synthesize torrent;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -53,6 +55,7 @@
     [self update];
 }
 
+
 - (void)viewDidUnload
 {
     [self setName:nil];
@@ -70,5 +73,83 @@
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+
+- (IBAction)share:(id)sender;
+{
+    
+    //instancier une UIACtionSheet
+    UIActionSheet * shareSheet = [[UIActionSheet alloc]initWithTitle:@"Partagez ce torrent!" delegate:self cancelButtonTitle:@"Annuler" destructiveButtonTitle:nil otherButtonTitles:@"email",@"twitter", nil];
+    
+    //Presenter une ActionSheet
+    [shareSheet showInView:self.view];
+}
+
+-(void)shareByEmail
+{
+    //voir si possibilité d'envoyer un email
+    //if(![MFMailComposeViewController canSendMail]) return;
+    
+    //Instance de MFmail...Controller
+    MFMailComposeViewController * vc = [[MFMailComposeViewController alloc]init];
+    
+    //set subject, messageBody...
+    [vc setSubject:self.torrent.name];    
+    //declarer en delegate
+    vc.mailComposeDelegate = self;
+    
+    //presenter la vue modal MFMail...ViewController
+    [self presentModalViewController:vc animated:YES];
+    
+}
+
+-(void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+{
+    [self dismissModalViewControllerAnimated:true];
+}
+
+-(void)shareByTwitter
+{
+    
+    //Instance de MFmail...Controller
+    TWTweetComposeViewController * tw = [[TWTweetComposeViewController alloc]init];
+    
+    //set Initial Text
+    [tw setInitialText:self.torrent.name];
+    //[tw addImage:[UIImage imageWithData:self.torrent.picture]];
+    
+    //presenter la vue modal MFMail...ViewController
+    [self presentModalViewController:tw animated:YES];
+    
+    
+}
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == actionSheet.cancelButtonIndex) return;
+    
+    switch (buttonIndex) {
+        case 0:
+            //Email
+            [self shareByEmail];
+            break;
+            
+        case 1:
+            //Twitter
+            [self shareByTwitter];
+            break;
+            
+        default:
+            break;
+    }
+}
+
+- (IBAction)info:(id)sender;
+{
+    
+    AboutViewController * info = [[AboutViewController alloc]init];
+    info.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self presentModalViewController:info animated:YES];
+}
+
 
 @end

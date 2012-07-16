@@ -15,7 +15,7 @@
 
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSString * url;
-@property (nonatomic, retain) NSString * picture;
+@property (nonatomic, retain) NSData * picture;
 @property (nonatomic, retain) NSString * comments;
 @property (nonatomic, retain) NSDate * startDate;
 @property (nonatomic, retain) NSDate * endDate;
@@ -24,5 +24,8 @@
 @property (nonatomic, retain) Caterory *releatedCategory;
 
 + (Torrent *) torrentModel;
+/*+ (NSArray *)nowOnPirate ;
+
+- (void)performBlockWithImageData:(void (^)(NSData * picture)) imageBlock;*/
 
 @end
