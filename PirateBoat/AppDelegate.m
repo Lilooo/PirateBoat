@@ -10,33 +10,58 @@
 #import "IndexViewController.h"
 #import "ListViewController.h"
 #import "AboutViewController.h"
+#import "HomeViewController.h"
 #import "Torrent.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
+@synthesize tabBarController = _tabBarController;
 @synthesize managedObjectContext = __managedObjectContext;
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
-@synthesize rootViewController;
+//@synthesize rootViewController;
 
-- (UIViewController *) rootViewController
+/*- (UIViewController *) rootViewController
 {
     //AboutViewController * vc = [[AboutViewController alloc]init];
-    IndexViewController * vc = [[IndexViewController alloc]init];
+    //IndexViewController * vc = [[IndexViewController alloc]init];
     //ListViewController * vc = [[ListViewController alloc]init];
+    HomeViewController * vc = [[HomeViewController alloc]init];
+    //UITabBarController * tabbar = [[UITabBarController alloc]init];
+    //tabbar.tabBar.tintColor = [UIColor blackColor];
+    //return tabbar;
+    
     UINavigationController * nav = [[UINavigationController alloc]initWithRootViewController:vc];
     nav.navigationBar.tintColor = [UIColor blackColor];
     return nav;
-}
+    
+    
+}*/
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    // Test of the rss reader
+    //RSSReader * reader = [[RSSReader alloc]initWhitMusicCategory];
+    //RSSReader * reader = [[RSSReader alloc]initWhitExampleUrl];
+    //[reader parseXMLFile];
+    // End test
+    
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = self.rootViewController;
-    NSLog(@"toto");
+    self.tabBarController = [[UITabBarController alloc] init];
+
+    UIViewController *viewController1 = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
+    UIViewController *viewController2 = [[ListViewController alloc] initWithNibName:@"ListViewController" bundle:nil];
+    UIViewController *viewController3 = [[AboutViewController alloc] initWithNibName:@"AboutViewController" bundle:nil];
+    UINavigationController* navSearch = [[UINavigationController alloc]
+                                             initWithRootViewController:viewController2];
+    NSArray * controllers = [NSArray arrayWithObjects:viewController1,navSearch,viewController3, nil];
+    self.tabBarController.viewControllers = controllers;
+    //self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2, nil];
+    //self.window.rootViewController = self.rootViewController;
+    self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
 }

@@ -9,7 +9,6 @@
 #import "IndexViewController.h"
 #import "ListViewController.h"
 #import "AboutViewController.h"
-#import "Torrent.h"
 
 @interface IndexViewController ()
 
@@ -37,7 +36,7 @@
 - (void)update 
 {
     self.name.text = self.torrent.name;
-    self.pubDate.text = [NSDateFormatter localizedStringFromDate:self.torrent.startDate dateStyle:NSDateFormatterLongStyle timeStyle:NSDateFormatterNoStyle];
+    self.pubDate.text = [NSDateFormatter localizedStringFromDate:self.torrent.pubDate dateStyle:NSDateFormatterLongStyle timeStyle:NSDateFormatterNoStyle];
     self.creator.text = self.torrent.dcCreator;
     self.contentLength.text = self.torrent.magnet;
     //self.guid.?? = self.torrent.comments;
@@ -50,7 +49,7 @@
     // Do any additional setup after loading the view from its nib.
     if (!self.torrent) 
     {
-        self.torrent = [Torrent torrentModel];
+        self.torrent = [RSSItem torrentModel];
     }
     [self update];
 }

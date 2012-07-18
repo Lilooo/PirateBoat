@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1171" systemVersion="11E53" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Caterory" representedClassName="Caterory" syncable="YES">
+    <entity name="Category" representedClassName="Caterory" syncable="YES">
         <attribute name="entityId" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="feedUrl" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
@@ -16,10 +16,10 @@
         <attribute name="picture" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="startDate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="releatedCategory" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Caterory" inverseName="torrents" inverseEntity="Caterory" syncable="YES"/>
+        <relationship name="releatedCategory" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="torrents" inverseEntity="Category" syncable="YES"/>
     </entity>
     <elements>
+        <element name="Category" positionX="-72" positionY="141" width="128" height="120"/>
         <element name="Torrent" positionX="160" positionY="192" width="128" height="180"/>
-        <element name="Caterory" positionX="-72" positionY="141" width="128" height="120"/>
     </elements>
 </model>

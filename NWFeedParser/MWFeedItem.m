@@ -51,27 +51,27 @@
 
 - (id)initWithCoder:(NSCoder *)decoder {
 	if ((self = [super init])) {
-		identifier = [decoder decodeObjectForKey:@"identifier"];
+		identifier = [decoder decodeObjectForKey:@"comments"];
 		title = [decoder decodeObjectForKey:@"title"];
 		link = [decoder decodeObjectForKey:@"link"];
-		date = [decoder decodeObjectForKey:@"date"];
+		date = [decoder decodeObjectForKey:@"pubDate"];
 		updated = [decoder decodeObjectForKey:@"updated"];
-		summary = [decoder decodeObjectForKey:@"summary"];
-		content = [decoder decodeObjectForKey:@"content"];
-		enclosures = [decoder decodeObjectForKey:@"enclosures"];
+		summary = [decoder decodeObjectForKey:@"dc:creator"];
+		content = [decoder decodeObjectForKey:@"guid"];
+		enclosures = [decoder decodeObjectForKey:@"torrent"];
 	}
 	return self;
 }
 
 - (void)encodeWithCoder:(NSCoder *)encoder {
-	if (identifier) [encoder encodeObject:identifier forKey:@"identifier"];
+	if (identifier) [encoder encodeObject:identifier forKey:@"comments"];
 	if (title) [encoder encodeObject:title forKey:@"title"];
 	if (link) [encoder encodeObject:link forKey:@"link"];
-	if (date) [encoder encodeObject:date forKey:@"date"];
+	if (date) [encoder encodeObject:date forKey:@"pubDate"];
 	if (updated) [encoder encodeObject:updated forKey:@"updated"];
-	if (summary) [encoder encodeObject:summary forKey:@"summary"];
-	if (content) [encoder encodeObject:content forKey:@"content"];
-	if (enclosures) [encoder encodeObject:enclosures forKey:@"enclosures"];
+	if (summary) [encoder encodeObject:summary forKey:@"dc:creator"];
+	if (content) [encoder encodeObject:content forKey:@"guid"];
+	if (enclosures) [encoder encodeObject:enclosures forKey:@"torrent"];
 }
 
 @end

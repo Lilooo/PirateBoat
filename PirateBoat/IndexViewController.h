@@ -9,7 +9,7 @@
 #import <MessageUI/MessageUI.h>
 #import <Twitter/Twitter.h>
 #import <UIKit/UIKit.h>
-#import "Torrent.h"
+#import "RSSItem.h"
 
 @interface IndexViewController : UIViewController
 <UIActionSheetDelegate, MFMailComposeViewControllerDelegate>
@@ -19,7 +19,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *guid;
 @property (weak, nonatomic) IBOutlet UILabel *contentLength;
 @property (weak, nonatomic) IBOutlet UIButton *link;
-@property (strong, nonatomic) Torrent * torrent;
+@property (strong, nonatomic) RSSItem * torrent;
 
 - (IBAction)share:(id)sender;
 - (IBAction)info:(id)sender;

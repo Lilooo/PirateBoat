@@ -8,24 +8,24 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "MWFeedItem.h"
 
-@class Caterory;
+@class Category;
 
 @interface Torrent : NSManagedObject
 
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSString * url;
-@property (nonatomic, retain) NSData * picture;
+@property (nonatomic, retain) NSDate * pubDate;
 @property (nonatomic, retain) NSString * comments;
-@property (nonatomic, retain) NSDate * startDate;
 @property (nonatomic, retain) NSDate * endDate;
 @property (nonatomic, retain) NSString * dcCreator;
 @property (nonatomic, retain) NSString * magnet;
-@property (nonatomic, retain) Caterory *releatedCategory;
+@property (nonatomic, retain) Category *releatedCategory;
 
 + (Torrent *) torrentModel;
-/*+ (NSArray *)nowOnPirate ;
++ (Torrent *) convertFeedItemInTorrent:(MWFeedItem *) item;
+- (id) initWithName:(NSString *)name andPubDate:(NSDate *)pubDate;
 
-- (void)performBlockWithImageData:(void (^)(NSData * picture)) imageBlock;*/
 
 @end
